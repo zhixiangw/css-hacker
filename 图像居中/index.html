@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图像居中</title>
+</head>
+<style>
+  .display-container{
+    display: flex;
+  }
+  .display-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dedede;
+    margin: 0 5px;
+    background-color: #dddd;
+  }
+  .desc{
+    margin-top: 20px;
+    padding: 4px 10px;
+    border: 1px solid #dedede;
+  }
+  p{
+    color: #666;
+  }
+  b {
+    background-color: #eaf5ff;
+    color: #0366d6;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .big {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+  .medium {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+  .small {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+</style>
+<body>
+  <section class="display-container">
+    <div class="display-item">
+      <div class="big">
+        <img src="./images/cat.png" alt="cat">
+      </div>
+    </div>
+    <div class="display-item">
+      <div class="medium">
+        <img src="./images/smile.jpeg" alt="smile">
+      </div>
+    </div>
+    <div class="display-item">
+      <div class="small">
+        <img src="./images/cat.png" alt="cat">
+      </div>
+    </div>
+  </section>
+  <section class="desc">
+    <p><b>解决痛点：</b>不用再担心图片被挤压或者拉伸导致变形，也不用通过js动态读取图片，以宽或者高作为参考进行图片缩放，用以达到图片最全的展示出来</p>
+    <p><b>解决方法：</b>html5: img 属性： object-fit </p>
+    <p>参考：</p>
+    <ul>
+      <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit">MDN</a></li>
+      <li><a href="https://caniuse.com/#search=object-fit">兼容</a></li>
+    </ul>
+  </section>
+</body>
+</html>
