@@ -5,7 +5,7 @@
 >html5: img 属性： object-fit
 
 ### 解决效果
-![图像居中]('./images/图像居中.png')
+![图像居中](./images/图像居中.png)
 
 ### 参考
 >[MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit)<br>
